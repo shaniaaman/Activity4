@@ -1,0 +1,20 @@
+
+<div>
+  <strong>Name:</strong>
+  <%= @grade.name %>
+</div>
+
+<div>
+  <strong>Course:</strong>
+  <%= @grade.course %>
+</div>
+
+<div>
+  <strong>ID Number:</strong>
+  <%= @grade.id_num %>
+</div>
+
+<div>
+  <strong>AVG Grade:</strong>
+  <%= (@grade.prl + @grade.mid + @grade.prf + @grade.fin)/4 %>
+</div>

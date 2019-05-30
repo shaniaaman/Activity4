@@ -1,0 +1,38 @@
+
+<h1>Gradebook</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name &nbsp&nbsp</th>
+      <th>Course &nbsp&nbsp</th>
+      <th>ID Number &nbsp&nbsp</th>
+      <th>PRE LIMS &nbsp&nbsp</th>
+      <th>MID TERMS &nbsp&nbsp&nbsp</th>
+      <th>PRE FINALS &nbsp&nbsp&nbsp</th>
+      <th>FINALS &nbsp&nbsp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grades.each do |grade| %>
+      <tr>
+        <td><%= grade.name %>&nbsp&nbsp</td>
+      	<td><%= grade.course %>&nbsp&nbsp</td>
+      	<td><%= grade.id_num %>&nbsp</td>
+      	<td><%= grade.prl %>&nbsp</td>
+      	<td><%= grade.mid %>&nbsp</td>
+      	<td><%= grade.prf %>&nbsp</td>
+      	<td><%= grade.fin %>&nbsp</td>
+		<td><a href="grades/<%= grade.id%>">SHOW</a>&nbsp</td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+  <a href="grades/new">CREATE NEW</a>
+</table>
+
+
+
+

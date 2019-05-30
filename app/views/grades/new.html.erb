@@ -1,0 +1,41 @@
+<%= form_for(@grade) do |f| %>
+	<div class="field">
+		<%= f.label "Name" %>
+		<%= f.text_field :name %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Course" %>
+		<%= f.text_field :course %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "ID Number" %>
+		<%= f.text_field :id_num %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "PRE LIMS" %>
+		<%= f.text_field :prl %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "MID TERMS" %>
+		<%= f.text_field :mid %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "PRE FINALS" %>
+		<%= f.text_field :prf %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "FINALS" %>
+		<%= f.text_field :fin %>
+	</div>
+	
+	<%=  f.submit "Submit" %>
+
+<% end %> 
+
+

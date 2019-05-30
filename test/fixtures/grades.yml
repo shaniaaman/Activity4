@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  course: MyText
+  id_num: 1
+  prl: 9.99
+  mid: 9.99
+  prf: 9.99
+  fin: 9.99
+
+two:
+  name: MyText
+  course: MyText
+  id_num: 1
+  prl: 9.99
+  mid: 9.99
+  prf: 9.99
+  fin: 9.99
